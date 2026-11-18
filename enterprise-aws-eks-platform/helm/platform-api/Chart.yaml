@@ -1,0 +1,6 @@
+apiVersion: v2
+name: platform-api
+description: Example API workload for the Enterprise AWS EKS Platform
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

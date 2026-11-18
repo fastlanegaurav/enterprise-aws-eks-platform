@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: platform-api
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/fastlanegaurav/Cloud-native-cicd-pipeline.git
+    targetRevision: main
+    path: helm/platform-api
+    helm:
+      values: |
+        image:
+          repository: REPLACE_WITH_ACCOUNT_ID.dkr.ecr.ap-south-1.amazonaws.com/enterprise-eks-dev/platform-api
+          tag: REPLACE_WITH_IMMUTABLE_IMAGE_TAG
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: platform
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

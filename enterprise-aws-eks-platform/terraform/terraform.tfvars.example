@@ -1,0 +1,10 @@
+aws_region                         = "ap-south-1"
+project_name                       = "enterprise-eks"
+environment                        = "dev"
+kubernetes_version                 = "1.31"
+vpc_cidr                           = "10.40.0.0/16"
+cluster_endpoint_public_access_cidrs = ["YOUR_PUBLIC_IP/32"]
+node_instance_types                = ["t3.medium"]
+node_min_size                      = 1
+node_desired_size                  = 2
+node_max_size                      = 3
