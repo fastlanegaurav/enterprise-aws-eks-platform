@@ -1,0 +1,24 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+!terraform.tfvars.example
+crash.log
+override.tf
+override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+
+# Local secrets / tools
+.env
+.env.*
+!.env.example
+.DS_Store
+.kube/
