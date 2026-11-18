@@ -2,7 +2,9 @@
 
 A production-style, portfolio-grade platform engineering project that provisions an AWS EKS foundation with Terraform and deploys a containerized Python service using GitHub Actions, Amazon ECR, Helm and Argo CD.
 [![CI](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/ci.yml)
+
 [![Image Publish](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/image-publish.yml/badge.svg?branch=main)](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/image-publish.yml)
+
 [![Terraform Security](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/terraform-security.yml/badge.svg)](https://github.com/fastlanegaurav/enterprise-aws-eks-platform/actions/workflows/terraform-security.yml)
 
 > **Important:** This is an engineering reference implementation, not a claim of production certification. Review the security, networking, version compatibility and cost settings for your environment before applying it.
